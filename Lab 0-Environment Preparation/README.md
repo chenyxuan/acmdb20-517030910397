@@ -192,7 +192,13 @@ You must submit your code (see below) as well as a short (2 pages, maximum) writ
 * Describe how long you spent on the lab, and whether there was anything you found particularly difficult or confusing.
 
 ### 3.1 Submit Process
-To submit your code, please create a github repo for your project, name it as follows: `acmdb20-"student-id"`, where "student-id" refers to your student number. For example, my student number is 516030910594, so the project name will be `acmdb20-516030910594`. Add `acmdb-lab0` as a directory to your github repo. Add TAs github account to your repo. Stop editing your lab0 folder (and commit all your changes) before the due date and time. You may submit (commit) your code multiple times; we will use the latest version you submit that arrives before the deadline. Place the write-up in a file called answers.txt or answers.pdf in the top level of your acmdb-lab0 directory.
+To submit your code, please follow the guide below:
+* Create a github repo for your project, name it as follows: `acmdb20-"student-id"`, where "student-id" refers to your student number. For example, my student number is 516030910594, so the project name will be `acmdb20-516030910594`. 
+* Add `acmdb-lab0` as a directory to your github repo. 
+* Add  `azure-pipelines.yml` to your github repo. 
+* Add TAs github account to your repo. 
+* Place the write-up in a file called answers.txt or answers.pdf in the top level of your acmdb-lab0 directory.
+* Stop editing your lab0 folder (and commit all your changes) before the due date and time. You may submit (commit) your code multiple times; we will use the latest version you submit that arrives before the deadline. 
 
 TA1: [Zihao Xu](https://github.com/shsjxzh)
 
