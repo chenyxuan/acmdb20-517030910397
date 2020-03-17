@@ -219,7 +219,7 @@ $ ant systemtest
 Since you may use system other than linux to develop the code and only test it locally, it is highly possible that it will fail on the grading machine. Therefore, we recommend you to test it by [Azure pipelines](https://azure.microsoft.com/en-us/services/devops/pipelines/). 
 
 ### 4.1 Azure pipelines test
-Azure pipelines is a system that can continuously build and test your code on any platform. We have already included an `azure-pipelines.yml` file in `acmdb-lab0`, which encodes our grading machine environment, and you can try the system following this [guide](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/java?view=azure-devops).
+Azure pipelines is a system that can continuously build and test your code on any platform. We have already included an `azure-pipelines.yml` file in `acmdb-lab0`, which encodes our grading machine environment. You can try the system following this [guide](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/java?view=azure-devops).
 
 ## 5. Submitting a bug
 Please submit (friendly!) bug reports to both TAs. When you do, please try to include:
