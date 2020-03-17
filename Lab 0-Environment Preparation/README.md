@@ -174,7 +174,7 @@ If you want to run commands such as "ant test" or "ant systemtest," right click 
 Choose "Import Project from external model" -> "Eclipse".
 * Click "Next" until you need to select the project SDK. Make sure you select "JDK 1.8" or "openjdk-8".
 * Clike "Finish",  and you should be able to see "acmdb-lab0" as a new project in the Project Explorer tab on the left-hand side of your screen. Opening this project reveals the directory structure discussed above - implementation code can be found in "src," and unit tests and system tests found in "test."
-* Select "File" -> "Project Structure". In the project setting page, click "Libraries" -> "+"(New project library) -> "Java", and select the "lib" directory contained in the "acmdb-lab0" directory.
+* Select "File" -> "Project Structure". In the project setting page, click "Libraries" -> "+"(New project library) -> "Java", and select the "lib" directory contained in the "acmdb-lab0" directory. This step will add necessary libraries to the project.
 
 #### Running Individual Unit and System Tests
 
