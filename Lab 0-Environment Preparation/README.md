@@ -204,7 +204,7 @@ TA1: [Zihao Xu](https://github.com/shsjxzh)
 
 TA2: [Chang Liu](https://github.com/only-changer)
 
-**Note:** We **highly recommend** you make your github repo **private** to avoid plagiarism!
+**Note:** We **highly recommend** you to make your github repo **private** to avoid plagiarism!
 
 ## 4. Test on Grading Environment 
 Before testing, we will replace your `build.xml` and the entire contents of the test directory with our version of these files. The whole grading pipeline will look roughly like this:
