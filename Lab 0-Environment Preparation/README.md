@@ -1,5 +1,5 @@
 # Lab 0: Environment Preparation
-<b><font size=5>Due: Fri, Mar 27th, 12:55 PM </font></b>
+<font size=5>Due: Fri, Mar 27th, 12:55 PM </font>
 
 In the lab assignments you will write a basic database management system called SimpleDB. For this lab, you will focus on preparing necessary tools and environments for the assignments; in future labs, you will add support for the core modules required to access stored data on disk, as well as basic operators, transactions, locking, and concurrent queries.
 
