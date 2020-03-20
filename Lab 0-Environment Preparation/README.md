@@ -38,6 +38,7 @@ $ sudo apt install git
 SimpleDB uses the [Ant build tool](http://ant.apache.org/) to compile the code and run tests. Ant is similar to [make](http://www.gnu.org/software/make/manual/), but the build file is written in XML and is somewhat better suited to Java code. There are 2 kind of tests: unit test and system test, while the former is to smooth your development, and the latter is to do end-to-end test. 
 
 We will provide 3 ways to do local test: command line, using Eclipse and using Intellij.
+
 <b>Note:</b> Windows users can also use the command line tool if you follow the guide above.
 
 ### 2.1 Command line
