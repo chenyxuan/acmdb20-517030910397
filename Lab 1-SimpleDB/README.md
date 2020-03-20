@@ -379,7 +379,10 @@ You must submit your code (see below) as well as a short (2 pages, maximum) writ
 
 This lab should be manageable for a single person.  Therefore, teaming is prohibited in this project.
 
-###  3.2. Submitting a bug 
+### 3.2. Submitting your assignment
+To submit your code, please create a `acmdb-lab1` directory in your github repo. Please submit your writeup as a PDF or plain text file (.txt) in the top level of your `acmdb-lab1` directory. Please do not submit a .doc or .docx.
+
+###  3.3. Submitting a bug 
 
 Please submit (friendly!) bug reports to both TAs. When you do, please try to include:
 
@@ -387,7 +390,7 @@ Please submit (friendly!) bug reports to both TAs. When you do, please try to in
 * A `.java` file we can drop in the `test/simpledb` directory, compile, and run.
 * A `.txt` file with the data that reproduces the bug. We should be able to convert it to a `.dat` file using HeapFileEncoder.
 
-###  3.3. Grading 
+###  3.4. Grading 
 
 <p>100% of your grade will be based on whether or not your code passes the test suite we will run over it. Before handing in your code, you should make sure it produces no errors (passes all of the tests) from both  <tt>ant test</tt> and <tt>ant systemtest</tt>.
 
@@ -403,6 +406,6 @@ $ ant test
 $ ant systemtest
 ```
 
-<p>If any of these commands fail, we`ll be unhappy, and, therefore, so will your grade.
+<p>If any of these commands fail, we'll be unhappy, and, therefore, so will your grade.
 We've had a lot of fun designing this assignment, and we hope you enjoy hacking on it!
 
