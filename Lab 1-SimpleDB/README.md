@@ -9,7 +9,7 @@
 For this lab, you will focus on implementing the core modules required to access stored data on disk. Before beginning to write code, we **strongly encourage** you to read through this entire document to get a feel for the high-level design of SimpleDB. 
 
 
-The code for Lab1 is already given to you in Lab 0. You should change the name of the folder, or make a copy of it. For example:
+The code for Lab1 is already given to you in Lab 0. You should rename the folder to move forward.
 
 ```console
 $ mv acmdb-lab0 acmdb-lab1
