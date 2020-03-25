@@ -297,7 +297,7 @@ Suppose you have a data file, "some_data_file.txt", with the following contents:
 1,1,1
 2,2,2 
 3,4,4
-(Be sure to add en empty line at the end of this file!)
+(Be sure to add an empty line at the end of this file!)
 ```
 <p>
 Because you haven’t implemented "insertTuple" yet, you have no way to create data files during the first several labs. We provide you with a method that can convert a `.txt` file to a `.dat` file in SimpleDB's HeapFile format. Using the following command:
@@ -305,8 +305,8 @@ Because you haven’t implemented "insertTuple" yet, you have no way to create d
 <p>
 
 ```console
-$ ant dist # explore your code to a jar package into folder "dist"
-$ java -jar dist/simpledb.jar convert some_data_file.txt 3 # call the jar package
+$ ant dist  # explore your code to a jar package into folder "dist"
+$ java -jar dist/simpledb.jar convert some_data_file.txt 3  # call the jar package
 ```
 
 <p>
