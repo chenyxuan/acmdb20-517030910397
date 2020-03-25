@@ -128,26 +128,6 @@ BUILD SUCCESSFUL
 Total time: 52 seconds
 ```
 
-#### 2.1.3 Creating dummy tables
-Because you haven’t implemented "insertTuple" yet, you have no way to create data files during the first several labs. We provide you with a JAR package that can convert a `.txt` file to a `.dat` file in SimpleDB's HeapFile format. Using the following command:
-```console
-$ java -jar dist/simpledb.jar convert file.txt N
-```
-where `file.txt` is the name of the file and `N` is the number of columns in the file. Notice that `file.txt` has to be in the following format:
-```
-int1,int2,...,intN
-int1,int2,...,intN
-int1,int2,...,intN
-int1,int2,...,intN
-```
-...where each `intN` is a non-negative integer.
-
-To view the contents of a table, use the print command:
-```console
-$ java -jar dist/simpledb.jar print file.dat N
-```
-
-where `file.dat` is the name of a table created with the `convert` command, and `N` is the number of columns in the file.
 
 ### 2.2 Eclipse
 [Eclipse](https://www.eclipse.org/) is a graphical software development environment that you might be more comfortable with working in.

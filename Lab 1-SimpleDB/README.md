@@ -297,17 +297,26 @@ Suppose you have a data file, "some_data_file.txt", with the following contents:
 1,1,1
 2,2,2 
 3,4,4
+(Be sure to add en empty line at the end of this file!)
 ```
 <p>
-You can convert this into a binary file that SimpleDB can query as follows:
+Because you haven’t implemented "insertTuple" yet, you have no way to create data files during the first several labs. We provide you with a method that can convert a `.txt` file to a `.dat` file in SimpleDB's HeapFile format. Using the following command:
+
 <p>
 
 ```console
-$java -jar dist/simpledb.jar convert some_data_file.txt 3
+$ ant dist # explore your code to a jar package into folder "dist"
+$ java -jar dist/simpledb.jar convert some_data_file.txt 3 # call the jar package
 ```
 
 <p>
 Here, the argument "3" tells conver that the input has 3 columns.
+
+To view the contents of this table, use the print command:
+```console
+$ java -jar dist/simpledb.jar print some_data_file.dat 3
+```
+
 <p>
 The following code implements a simple selection query over this file. This code is equivalent to the SQL statement `SELECT * FROM some_data_file`.
 
