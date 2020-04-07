@@ -1,0 +1,161 @@
+SELECT MAX(S.age) FROM student S;
+
+SELECT S.sname, S.gpa
+FROM student S, enroll E
+WHERE S.sid = E.sid AND E.cno = 302;
+
+SELECT DISTINCT S.sname, M.dname
+FROM student S, major M, enroll E, course C
+WHERE S.sid = M.sid AND S.sid = E.sid AND E.cno = C.cno AND LOCATE('Advanced', C.cname);
+
+SELECT DISTINCT S.sname
+FROM student S, enroll E, enroll E2
+WHERE S.sid = E.sid AND E.dname = 'Computer Sciences' AND S.sid = E2.sid AND E2.dname = 'Mathematics';
+
+SELECT M.dname, AVG(S.gpa), MAX(S.gpa) - MIN(S.gpa)
+FROM student S, major M
+WHERE S.sid = M.sid
+GROUP by M.dname;
+
+SELECT COUNT(S0.sname)
+FROM student S0
+WHERE S0.sid NOT IN
+(SELECT DISTINCT S.sid
+FROM student S, major M, major M2
+WHERE S.sid = M.sid AND S.sid = M2.sid AND M.dname <> M2.dname);
+
+SELECT S.sname
+FROM student S
+WHERE NOT EXISTS
+(SELECT *
+FROM enroll E
+WHERE S.sid = E.sid);
+
+SELECT S.sname
+FROM student S
+WHERE S.year = 3 AND S.age >= ALL 
+(SELECT S2.age
+FROM student S2
+WHERE S2.year = 3);
+
+SELECT S.sid, S.sname, S.gpa
+FROM student S
+WHERE
+(SELECT COUNT(DISTINCT C.cno)
+FROM course C
+WHERE C.dname = 'Computer Sciences') = 
+(SELECT COUNT(DISTINCT C1.cno)
+FROM course C1, enroll E
+WHERE C1.dname = 'Computer Sciences' AND E.sid = S.sid AND E.cno = C1.cno);
+
+SELECT D.dname, D.numphds
+FROM dept D
+WHERE NOT EXISTS
+(SELECT *
+FROM student S, major M, enroll E
+WHERE S.sid = M.sid AND M.dname = D.dname AND S.sid = E.sid AND E.dname = 'Computer Sciences');
+
+SELECT S0.sname
+FROM student S0
+WHERE NOT EXISTS
+(SELECT *
+FROM student S
+WHERE S.gpa > S0.gpa AND S.year = S0.year);
+
+SELECT P.pname
+FROM prof P
+WHERE NOT EXISTS
+(SELECT *
+FROM prof P2
+WHERE
+(SELECT COUNT(*)
+FROM section S1
+WHERE S1.pname = P.pname) >
+(SELECT COUNT(*)
+FROM section S2
+WHERE S2.pname = P2.pname));
+
+SELECT S.sname, M.dname
+FROM student S, major M
+WHERE S.sid = M.sid AND NOT EXISTS
+(SELECT *
+FROM student S1, major M1
+WHERE S1.sid = M1.sid AND M.dname = M1.dname AND 
+(SELECT AVG(E.grade)
+FROM enroll E
+WHERE E.sid = S.sid) <
+(SELECT AVG(E1.grade)
+FROM enroll E1
+WHERE E1.sid = S1.sid)) AND EXISTS
+(SELECT *
+FROM enroll E2
+WHERE S.sid = E2.sid);
+
+SELECT S.dname, S.cno, S.sectno
+FROM section S
+WHERE
+(SELECT COUNT(*)
+FROM enroll E
+WHERE E.dname = S.dname AND E.cno = S.cno AND E.sectno = S.sectno) >=
+ALL (SELECT COUNT(*)
+FROM enroll E1
+GROUP BY E1.dname, E1.cno, E1.sectno);
+
+SELECT M.dname
+FROM major M
+GROUP BY M.dname
+HAVING COUNT(*) >= 5;
+
+SELECT D.dname, COUNT(DISTINCT C0.cno), COUNT(DISTINCT P0.pname)
+FROM dept D, course C0, prof P0
+WHERE NOT EXISTS
+(SELECT *
+FROM dept D1
+WHERE 
+(SELECT COUNT(DISTINCT C.cno)
+FROM course C
+WHERE C.dname = D.dname) = 
+(SELECT COUNT(DISTINCT C1.cno)
+FROM course C1
+WHERE C1.dname = D1.dname)
+AND
+(SELECT COUNT(*)
+FROM prof P
+WHERE P.dname = D.dname) >
+(SELECT COUNT(*)
+FROM prof P1
+WHERE P1.dname = D1.dname)) AND
+C0.dname = D.dname AND
+P0.dname = D.dname
+GROUP BY D.dname;
+
+
+CREATE TABLE Emp (
+eid INTEGER,
+ename CHAR(30),
+age INTEGER ,
+salary REAL,
+PRIMARY KEY (eid),
+CHECK ( salary <= 200000 ));
+
+CREATE TABLE Works (
+eid INTEGER,
+did INTEGER,
+pcttime REAL,
+PRIMARY KEY (eid, did),
+FOREIGN KEY (did) REFERENCES Dept,
+FOREIGN KEY (eid) REFERENCES Emp);
+
+CREATE TABLE Dept (
+did INTEGER,
+buget REAL,
+managerid INTEGER ,
+PRIMARY KEY (did),
+FOREIGN KEY (managerid) REFERENCES Emp);
+
+CREATE ASSERTION empPcttime
+CHECK ( 
+ALL (SELECT SUM(W.pcttime)
+FROM Emp E, Works W
+WHERE E.eid = W.eid
+GROUP BY E.eid ) = 100 );

@@ -4,6 +4,8 @@
 
 **Due: Fri, April 10th, 12:55 PM**
 
+**Note** : TA has upload a new `TupleTest.java` file (which is in this folder). Please replace the old one and use this for self-verification.
+
 ##  1. Implementation Hints 
 
 For this lab, you will focus on implementing the core modules required to access stored data on disk. Before beginning to write code, we **strongly encourage** you to read through this entire document to get a feel for the high-level design of SimpleDB. 

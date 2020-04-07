@@ -1,2 +1,2 @@
 # ACM-DB
-Project for CS 392: Database Management System.
+Project and online coding homework for CS 392: Database Management System.

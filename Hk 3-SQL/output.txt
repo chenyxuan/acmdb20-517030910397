@@ -1,0 +1,362 @@
++------------+
+| MAX(S.age) |
++------------+
+|         99 |
++------------+
+1 row in set (0.00 sec)
+
++--------------------+------+
+| sname              | gpa  |
++--------------------+------+
+| Pierson, E.        |  3.5 |
+| Scott, Kim J.      |  3.8 |
+| Sather, Roberto B. |  2.2 |
+| Stanley, Leotha T. |  3.6 |
+| Jones, David S.    |  3.5 |
+| Paul, Mary W.      |  3.6 |
+| Soong, V.          |  3.5 |
+| Kellerman, S.      |  2.9 |
+| Korpel, E.         |  3.5 |
+| Emile, R.          |    2 |
+| Carter, Jimmy      |  3.5 |
+| Kissinger, Henry   |  3.4 |
+| Andrews, R.        |  2.8 |
+| Auen, B.           |  2.7 |
+| Shoemaker, A.      |  3.5 |
+| Fy, Clara I.       |    2 |
+| Heilskov, G.       |  2.5 |
+| Baskett, Wayse T.  |  2.1 |
++--------------------+------+
+18 rows in set (0.00 sec)
+
++-------------------+------------------------+
+| sname             | dname                  |
++-------------------+------------------------+
+| Hamilton, S.      | Chemical Engineering   |
+| Liu, Huihusan     | Chemical Engineering   |
+| Kasten, Norman L. | Chemical Engineering   |
+| Roger, Blotter N. | Civil Engineering      |
+| Natividad, A.     | Civil Engineering      |
+| Calcmity, J.      | Civil Engineering      |
+| Kennedy, Ed       | Civil Engineering      |
+| Bomber, C.        | Computer Sciences      |
+| Fred, Edwin B.    | Industrial Engineering |
+| Caucutt, B.       | Industrial Engineering |
+| Smith, Ike Z.     | Industrial Engineering |
+| Birch, M.         | Mathematics            |
++-------------------+------------------------+
+12 rows in set (0.00 sec)
+
++-----------+
+| sname     |
++-----------+
+| Zappa, F. |
++-----------+
+1 row in set (0.00 sec)
+
++------------------------+--------------------+-------------------------+
+| dname                  | AVG(S.gpa)         | MAX(S.gpa) - MIN(S.gpa) |
++------------------------+--------------------+-------------------------+
+| Chemical Engineering   | 3.2999999956651167 |      1.4000000953674316 |
+| Civil Engineering      | 2.9142857236521587 |                       4 |
+| Computer Sciences      | 3.0041666651765504 |      3.2000001072883606 |
+| Industrial Engineering | 2.7699999906122685 |      3.7999999970197678 |
+| Mathematics            | 3.2421052644127295 |       2.899999976158142 |
+| Sanitary Engineering   |  2.799999952316284 |                       0 |
++------------------------+--------------------+-------------------------+
+6 rows in set (0.00 sec)
+
++-----------------+
+| COUNT(S0.sname) |
++-----------------+
+|             100 |
++-----------------+
+1 row in set (0.01 sec)
+
++-----------------+
+| sname           |
++-----------------+
+| Ripper, Jack T. |
+| Grzlbltz, Q.    |
++-----------------+
+2 rows in set (0.00 sec)
+
++-------------+
+| sname       |
++-------------+
+| Kennedy, Ed |
++-------------+
+1 row in set (0.00 sec)
+
+Empty set (0.00 sec)
+
++----------------------+---------+
+| dname                | numphds |
++----------------------+---------+
+| Sanitary Engineering |       3 |
++----------------------+---------+
+1 row in set (0.00 sec)
+
++-------------------+
+| sname             |
++-------------------+
+| Scott, Kim J.     |
+| Natividad, A.     |
+| Fred, Edwin B.    |
+| Altenhaus, Gloria |
+| Quarnty, G.       |
+| Andrus, J.        |
+| Longlastname, A.  |
+| Zappa, F.         |
+| Davis, Scott P.   |
++-------------------+
+9 rows in set (0.00 sec)
+
++------------+
+| pname      |
++------------+
+| Brian, C.  |
+| Brown, S.  |
+| Bucket, T. |
+| Clark, E.  |
+| Edison, L. |
+| Smith, S.  |
+| Walter, A. |
++------------+
+7 rows in set (0.01 sec)
+
++---------------------+------------------------+
+| sname               | dname                  |
++---------------------+------------------------+
+| Baker, C.           | Chemical Engineering   |
+| Moeri, S.           | Civil Engineering      |
+| Micheal, Zadicki T. | Civil Engineering      |
+| Moomchi, B.         | Civil Engineering      |
+| Atny, Mary H.       | Civil Engineering      |
+| Sulfate, Barry M.   | Computer Sciences      |
+| Sather, Roberto B.  | Computer Sciences      |
+| Stanley, Leotha T.  | Computer Sciences      |
+| Bomber, C.          | Computer Sciences      |
+| Carter, Jimmy       | Computer Sciences      |
+| Evert, Chris        | Industrial Engineering |
+| Connors, Jimmy      | Industrial Engineering |
+| Mueller, D.         | Mathematics            |
+| Ghandi, I.          | Mathematics            |
+| Kirk, J.            | Mathematics            |
+| Andermanthenol, K.  | Mathematics            |
+| Taylor, R.          | Mathematics            |
+| Sulfate, Barry M.   | Sanitary Engineering   |
++---------------------+------------------------+
+18 rows in set (0.02 sec)
+
++-------------------+-----+--------+
+| dname             | cno | sectno |
++-------------------+-----+--------+
+| Computer Sciences | 726 |      1 |
++-------------------+-----+--------+
+1 row in set (0.00 sec)
+
++------------------------+
+| dname                  |
++------------------------+
+| Chemical Engineering   |
+| Civil Engineering      |
+| Computer Sciences      |
+| Industrial Engineering |
+| Mathematics            |
++------------------------+
+5 rows in set (0.00 sec)
+
++----------------------+------------------------+--------------------------+
+| dname                | COUNT(DISTINCT C0.cno) | COUNT(DISTINCT P0.pname) |
++----------------------+------------------------+--------------------------+
+| Chemical Engineering |                      1 |                        1 |
+| Civil Engineering    |                      3 |                        3 |
+| Computer Sciences    |                      4 |                        2 |
+| Mathematics          |                      2 |                        1 |
+| Sanitary Engineering |                      2 |                        1 |
++----------------------+------------------------+--------------------------+
+5 rows in set (0.00 sec)
+
+mysql> source ./query.txt
++------------+
+| MAX(S.age) |
++------------+
+|         99 |
++------------+
+1 row in set (0.00 sec)
+
++--------------------+------+
+| sname              | gpa  |
++--------------------+------+
+| Pierson, E.        |  3.5 |
+| Scott, Kim J.      |  3.8 |
+| Sather, Roberto B. |  2.2 |
+| Stanley, Leotha T. |  3.6 |
+| Jones, David S.    |  3.5 |
+| Paul, Mary W.      |  3.6 |
+| Soong, V.          |  3.5 |
+| Kellerman, S.      |  2.9 |
+| Korpel, E.         |  3.5 |
+| Emile, R.          |    2 |
+| Carter, Jimmy      |  3.5 |
+| Kissinger, Henry   |  3.4 |
+| Andrews, R.        |  2.8 |
+| Auen, B.           |  2.7 |
+| Shoemaker, A.      |  3.5 |
+| Fy, Clara I.       |    2 |
+| Heilskov, G.       |  2.5 |
+| Baskett, Wayse T.  |  2.1 |
++--------------------+------+
+18 rows in set (0.00 sec)
+
++-------------------+------------------------+
+| sname             | dname                  |
++-------------------+------------------------+
+| Hamilton, S.      | Chemical Engineering   |
+| Liu, Huihusan     | Chemical Engineering   |
+| Kasten, Norman L. | Chemical Engineering   |
+| Roger, Blotter N. | Civil Engineering      |
+| Natividad, A.     | Civil Engineering      |
+| Calcmity, J.      | Civil Engineering      |
+| Kennedy, Ed       | Civil Engineering      |
+| Bomber, C.        | Computer Sciences      |
+| Fred, Edwin B.    | Industrial Engineering |
+| Caucutt, B.       | Industrial Engineering |
+| Smith, Ike Z.     | Industrial Engineering |
+| Birch, M.         | Mathematics            |
++-------------------+------------------------+
+12 rows in set (0.00 sec)
+
++-----------+
+| sname     |
++-----------+
+| Zappa, F. |
++-----------+
+1 row in set (0.01 sec)
+
++------------------------+--------------------+-------------------------+
+| dname                  | AVG(S.gpa)         | MAX(S.gpa) - MIN(S.gpa) |
++------------------------+--------------------+-------------------------+
+| Chemical Engineering   | 3.2999999956651167 |      1.4000000953674316 |
+| Civil Engineering      | 2.9142857236521587 |                       4 |
+| Computer Sciences      | 3.0041666651765504 |      3.2000001072883606 |
+| Industrial Engineering | 2.7699999906122685 |      3.7999999970197678 |
+| Mathematics            | 3.2421052644127295 |       2.899999976158142 |
+| Sanitary Engineering   |  2.799999952316284 |                       0 |
++------------------------+--------------------+-------------------------+
+6 rows in set (0.00 sec)
+
++-----------------+
+| COUNT(S0.sname) |
++-----------------+
+|             100 |
++-----------------+
+1 row in set (0.00 sec)
+
++-----------------+
+| sname           |
++-----------------+
+| Ripper, Jack T. |
+| Grzlbltz, Q.    |
++-----------------+
+2 rows in set (0.00 sec)
+
++-------------+
+| sname       |
++-------------+
+| Kennedy, Ed |
++-------------+
+1 row in set (0.00 sec)
+
+Empty set (0.00 sec)
+
++----------------------+---------+
+| dname                | numphds |
++----------------------+---------+
+| Sanitary Engineering |       3 |
++----------------------+---------+
+1 row in set (0.00 sec)
+
++-------------------+
+| sname             |
++-------------------+
+| Scott, Kim J.     |
+| Natividad, A.     |
+| Fred, Edwin B.    |
+| Altenhaus, Gloria |
+| Quarnty, G.       |
+| Andrus, J.        |
+| Longlastname, A.  |
+| Zappa, F.         |
+| Davis, Scott P.   |
++-------------------+
+9 rows in set (0.00 sec)
+
++------------+
+| pname      |
++------------+
+| Brian, C.  |
+| Brown, S.  |
+| Bucket, T. |
+| Clark, E.  |
+| Edison, L. |
+| Smith, S.  |
+| Walter, A. |
++------------+
+7 rows in set (0.01 sec)
+
++---------------------+------------------------+
+| sname               | dname                  |
++---------------------+------------------------+
+| Baker, C.           | Chemical Engineering   |
+| Moeri, S.           | Civil Engineering      |
+| Micheal, Zadicki T. | Civil Engineering      |
+| Moomchi, B.         | Civil Engineering      |
+| Atny, Mary H.       | Civil Engineering      |
+| Sulfate, Barry M.   | Computer Sciences      |
+| Sather, Roberto B.  | Computer Sciences      |
+| Stanley, Leotha T.  | Computer Sciences      |
+| Bomber, C.          | Computer Sciences      |
+| Carter, Jimmy       | Computer Sciences      |
+| Evert, Chris        | Industrial Engineering |
+| Connors, Jimmy      | Industrial Engineering |
+| Mueller, D.         | Mathematics            |
+| Ghandi, I.          | Mathematics            |
+| Kirk, J.            | Mathematics            |
+| Andermanthenol, K.  | Mathematics            |
+| Taylor, R.          | Mathematics            |
+| Sulfate, Barry M.   | Sanitary Engineering   |
++---------------------+------------------------+
+18 rows in set (0.02 sec)
+
++-------------------+-----+--------+
+| dname             | cno | sectno |
++-------------------+-----+--------+
+| Computer Sciences | 726 |      1 |
++-------------------+-----+--------+
+1 row in set (0.00 sec)
+
++------------------------+
+| dname                  |
++------------------------+
+| Chemical Engineering   |
+| Civil Engineering      |
+| Computer Sciences      |
+| Industrial Engineering |
+| Mathematics            |
++------------------------+
+5 rows in set (0.00 sec)
+
++----------------------+------------------------+--------------------------+
+| dname                | COUNT(DISTINCT C0.cno) | COUNT(DISTINCT P0.pname) |
++----------------------+------------------------+--------------------------+
+| Chemical Engineering |                      1 |                        1 |
+| Civil Engineering    |                      3 |                        3 |
+| Computer Sciences    |                      4 |                        2 |
+| Mathematics          |                      2 |                        1 |
+| Sanitary Engineering |                      2 |                        1 |
++----------------------+------------------------+--------------------------+
+5 rows in set (0.00 sec)
+
+
