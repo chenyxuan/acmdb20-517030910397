@@ -1,0 +1,77 @@
+Buildfile: /home/chen/SimpleDB/acmdb-lab1/build.xml
+
+compile:
+
+testcompile:
+
+test:
+    [junit] Running simpledb.CatalogTest
+    [junit] Testsuite: simpledb.CatalogTest
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+    [junit] 
+    [junit] Testcase: handleDuplicateNames took 0.004 sec
+    [junit] Testcase: handleDuplicateIds took 0 sec
+    [junit] Testcase: getDatabaseFile took 0 sec
+    [junit] Testcase: getTableId took 0 sec
+    [junit] Testcase: getTupleDesc took 0 sec
+    [junit] Running simpledb.HeapFileReadTest
+    [junit] Testsuite: simpledb.HeapFileReadTest
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec
+    [junit] 
+    [junit] Testcase: getId took 0.017 sec
+    [junit] Testcase: testIteratorClose took 0.009 sec
+    [junit] Testcase: getTupleDesc took 0.001 sec
+    [junit] Testcase: testIteratorBasic took 0.002 sec
+    [junit] Testcase: readPage took 0.001 sec
+    [junit] Testcase: numPages took 0.001 sec
+    [junit] Running simpledb.HeapPageIdTest
+    [junit] Testsuite: simpledb.HeapPageIdTest
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+    [junit] 
+    [junit] Testcase: equals took 0.004 sec
+    [junit] Testcase: testHashCode took 0 sec
+    [junit] Testcase: getTableId took 0 sec
+    [junit] Testcase: pageno took 0 sec
+    [junit] Running simpledb.HeapPageReadTest
+    [junit] Testsuite: simpledb.HeapPageReadTest
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec
+    [junit] 
+    [junit] Testcase: getId took 0.009 sec
+    [junit] Testcase: getSlot took 0.003 sec
+    [junit] Testcase: getNumEmptySlots took 0.003 sec
+    [junit] Testcase: testIterator took 0.002 sec
+    [junit] Running simpledb.RecordIdTest
+    [junit] Testsuite: simpledb.RecordIdTest
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+    [junit] 
+    [junit] Testcase: equals took 0.004 sec
+    [junit] Testcase: tupleno took 0 sec
+    [junit] Testcase: hCode took 0 sec
+    [junit] Testcase: getPageId took 0 sec
+    [junit] Running simpledb.TupleDescTest
+    [junit] Testsuite: simpledb.TupleDescTest
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec
+    [junit] 
+    [junit] Testcase: combine took 0.027 sec
+    [junit] Testcase: getType took 0.001 sec
+    [junit] Testcase: getSize took 0.001 sec
+    [junit] Testcase: nameToId took 0.01 sec
+    [junit] Testcase: testEquals took 0 sec
+    [junit] Testcase: numFields took 0 sec
+    [junit] Running simpledb.TupleTest
+    [junit] Testsuite: simpledb.TupleTest
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+    [junit] 
+    [junit] Testcase: modifyFields took 0.005 sec
+    [junit] Testcase: getTupleDesc took 0.001 sec
+    [junit] Testcase: modifyRecordId took 0 sec
+
+BUILD SUCCESSFUL
+Total time: 1 second
