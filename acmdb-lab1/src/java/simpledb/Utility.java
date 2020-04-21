@@ -153,15 +153,5 @@ public class Utility {
         }
         return out;
     }
-
-    /**
-     * Feel free to compare objects that could be null.
-     */
-
-    public static final boolean equalsWithNulls(Object a, Object b) {
-        if(a == b) return true;
-        if(a == null || b == null) return false;
-        return a.equals(b);
-    }
 }
 

@@ -1,0 +1,67 @@
+Buildfile: /home/chen/ACM-DB/acmdb-lab2/build.xml
+
+compile:
+   [depend] The class simpledb.BTreeFileIterator in file /home/chen/ACM-DB/acmdb-lab2/bin/src/simpledb/BTreeFileIterator.class is out of date due to simpledb.BTreeFile but has not been deleted because its source file could not be determined
+   [depend] The class simpledb.BTreeSearchIterator in file /home/chen/ACM-DB/acmdb-lab2/bin/src/simpledb/BTreeSearchIterator.class is out of date due to simpledb.BTreeFile but has not been deleted because its source file could not be determined
+   [depend] Deleted 21 out of date files in 0 seconds
+    [javac] Compiling 16 source files to /home/chen/ACM-DB/acmdb-lab2/bin/src
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 8
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] 1 warning
+
+testcompile:
+
+systemtest:
+    [junit] Running simpledb.systemtest.BTreeFileDeleteTest
+    [junit] Testsuite: simpledb.systemtest.BTreeFileDeleteTest
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.911 sec
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.911 sec
+    [junit] 
+    [junit] Testcase: testReuseDeletedPages took 0.097 sec
+    [junit] Testcase: testMergeLeafPages took 0.019 sec
+    [junit] Testcase: testRedistributeLeafPages took 0.016 sec
+    [junit] Testcase: testDeleteRootPage took 0.011 sec
+    [junit] Testcase: testRedistributeInternalPages took 1.579 sec
+    [junit] Testcase: testDeleteInternalPages took 0.175 sec
+    [junit] Running simpledb.systemtest.BTreeFileInsertTest
+    [junit] Testsuite: simpledb.systemtest.BTreeFileInsertTest
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.486 sec
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.486 sec
+    [junit] 
+    [junit] Testcase: testSplitInternalPage took 0.387 sec
+    [junit] Testcase: addDuplicateTuples took 0.164 sec
+    [junit] Testcase: testSplitRootPage took 0.909 sec
+    [junit] Testcase: testSplitLeafPage took 0.003 sec
+    [junit] Testcase: addTuple took 0.011 sec
+    [junit] Running simpledb.systemtest.BTreeScanTest
+    [junit] Testsuite: simpledb.systemtest.BTreeScanTest
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.866 sec
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.866 sec
+    [junit] 
+    [junit] Testcase: testReadPage took 0.174 sec
+    [junit] Testcase: testRewind took 0.018 sec
+    [junit] Testcase: testRewindPredicates took 0.017 sec
+    [junit] Testcase: testSmall took 0.643 sec
+    [junit] Running simpledb.systemtest.EvictionTest
+    [junit] Testsuite: simpledb.systemtest.EvictionTest
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.655 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.655 sec
+    [junit] ------------- Standard Output ---------------
+    [junit] EvictionTest creating large table
+    [junit] EvictionTest scanning large table
+    [junit] EvictionTest scan complete, testing memory usage of scan
+    [junit] ------------- ---------------- ---------------
+    [junit] 
+    [junit] Testcase: testHeapFileScanWithManyPages took 0.645 sec
+    [junit] Running simpledb.systemtest.ScanTest
+    [junit] Testsuite: simpledb.systemtest.ScanTest
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.397 sec
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.397 sec
+    [junit] 
+    [junit] Testcase: testCache took 0.204 sec
+    [junit] Testcase: testRewind took 0.002 sec
+    [junit] Testcase: testSmall took 0.18 sec
+
+BUILD SUCCESSFUL
+Total time: 7 seconds

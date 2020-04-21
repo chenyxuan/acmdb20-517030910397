@@ -3,6 +3,7 @@ package simpledb;
 import java.io.*;
 
 import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
@@ -21,18 +22,14 @@ public class BufferPool {
     private static final int PAGE_SIZE = 4096;
 
     private static int pageSize = PAGE_SIZE;
+
+    private int numPages;
+    private Map<PageId, Page> pid2pg;
     
     /** Default number of pages passed to the constructor. This is used by
     other classes. BufferPool should use the numPages argument to the
     constructor instead. */
     public static final int DEFAULT_PAGES = 50;
-
-    /**
-     * NumPages is the maximum number of pages in this buffer pool.
-     * Pid2page is the mapping for retrieving pages.
-     */
-    private int numPages;
-    private HashMap<PageId, Page> pid2page;
 
     /**
      * Creates a BufferPool that caches up to numPages pages.
@@ -41,7 +38,7 @@ public class BufferPool {
      */
     public BufferPool(int numPages) {
         this.numPages = numPages;
-        pid2page = new HashMap<>();
+        pid2pg = new HashMap<>();
     }
     
     public static int getPageSize() {
@@ -73,19 +70,19 @@ public class BufferPool {
      * @param pid the ID of the requested page
      * @param perm the requested permissions on the page
      */
-    public Page getPage(TransactionId tid, PageId pid, Permissions perm)
+    public  Page getPage(TransactionId tid, PageId pid, Permissions perm)
         throws TransactionAbortedException, DbException {
-        if(pid2page.containsKey(pid)) {
-            return pid2page.get(pid);
-        } else {
-            if(pid2page.size() >= numPages) {
-                throw new DbException("Too many pages in bufferPool!");
+        if(pid2pg.containsKey(pid)) {
+            return pid2pg.get(pid);
+        }
+        else {
+            if(pid2pg.size() >= numPages) {
+                evictPage();
             }
-            int tableID = pid.getTableId();
-            DbFile table = Database.getCatalog().getDatabaseFile(tableID);
-            Page newPage = table.readPage(pid);
-            pid2page.put(pid, newPage);
-            return newPage;
+            DbFile dbFile = Database.getCatalog().getDatabaseFile(pid.getTableId());
+            Page page = dbFile.readPage(pid);
+            pid2pg.put(pid, page);
+            return page;
         }
     }
 
@@ -193,8 +190,7 @@ public class BufferPool {
         are removed from the cache so they can be reused safely
     */
     public synchronized void discardPage(PageId pid) {
-        // some code goes here
-        // not necessary for lab1
+        pid2pg.remove(pid);
     }
 
     /**

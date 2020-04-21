@@ -48,13 +48,12 @@ public class HeapPage implements Page {
         header = new byte[getHeaderSize()];
         for (int i=0; i<header.length; i++)
             header[i] = dis.readByte();
-
+        
         tuples = new Tuple[numSlots];
         try{
             // allocate and read the actual records of this page
-            for (int i=0; i<tuples.length; i++) {
-                tuples[i] = readNextTuple(dis, i);
-            }
+            for (int i=0; i<tuples.length; i++)
+                tuples[i] = readNextTuple(dis,i);
         }catch(NoSuchElementException e){
             e.printStackTrace();
         }
@@ -74,7 +73,7 @@ public class HeapPage implements Page {
      * Computes the number of bytes in the header of a page in a HeapFile with each tuple occupying tupleSize bytes
      * @return the number of bytes in the header of a page in a HeapFile with each tuple occupying tupleSize bytes
      */
-    private int getHeaderSize() {
+    private int getHeaderSize() {        
         return (int) Math.ceil(getNumTuples() / 8.);
     }
     
@@ -276,24 +275,24 @@ public class HeapPage implements Page {
      * Returns the number of empty slots on this page.
      */
     public int getNumEmptySlots() {
-        int emptySlots = 0;
+        int numEmptySlots = 0;
         for(int i = 0; i < numSlots; i++) {
             if(!isSlotUsed(i)) {
-                emptySlots++;
+                numEmptySlots++;
             }
         }
-        return emptySlots;
+        return numEmptySlots;
     }
 
     /**
      * Returns true if associated slot on this page is filled.
      */
-
     public boolean isSlotUsed(int i) {
-        return (header[i / 8] >> (i % 8)) % 2 != 0;
+        int byteNo = i / 8;
+        int offset = i % 8;
+        return (header[byteNo] & (0x1 << offset)) != 0;
     }
 
-    /**
     /**
      * Abstraction to fill or clear a slot on this page.
      */
@@ -310,17 +309,17 @@ public class HeapPage implements Page {
         return new TupleIterator();
     }
 
-    /**
-     * Tuple iterator
-     */
     private class TupleIterator implements Iterator<Tuple> {
-        private int curPos = 0;
-        private int index = 0;
-        private int numUsedTuples = getNumTuples() - getNumEmptySlots();
+        int cur;
+
+        public TupleIterator() {
+            cur = 0;
+            while (cur < numSlots && !isSlotUsed(cur)) cur++;
+        }
 
         @Override
         public boolean hasNext() {
-            return index < getNumTuples() && curPos < numUsedTuples;
+            return cur < numSlots;
         }
 
         @Override
@@ -328,9 +327,9 @@ public class HeapPage implements Page {
             if(!hasNext()) {
                 throw new NoSuchElementException();
             }
-            while(!isSlotUsed(index)) index++;
-            curPos++;
-            return tuples[index++];
+            Tuple tuple = tuples[cur++];
+            while (cur < numSlots && !isSlotUsed(cur)) cur++;
+            return tuple;
         }
     }
 }
