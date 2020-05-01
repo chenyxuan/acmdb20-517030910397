@@ -1,0 +1,115 @@
+Buildfile: /home/chen/SimpleDB/acmdb-lab3/build.xml
+
+compile:
+
+testcompile:
+
+systemtest:
+    [junit] Running simpledb.systemtest.AggregateTest
+    [junit] Testsuite: simpledb.systemtest.AggregateTest
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.108 sec
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.108 sec
+    [junit] 
+    [junit] Testcase: testCount took 0.055 sec
+    [junit] Testcase: testAverage took 0.008 sec
+    [junit] Testcase: testAverageNoGroup took 0.007 sec
+    [junit] Testcase: testSum took 0.009 sec
+    [junit] Testcase: testMin took 0.008 sec
+    [junit] Testcase: testMax took 0.008 sec
+    [junit] Running simpledb.systemtest.BTreeFileDeleteTest
+    [junit] Testsuite: simpledb.systemtest.BTreeFileDeleteTest
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.963 sec
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.963 sec
+    [junit] 
+    [junit] Testcase: testReuseDeletedPages took 0.094 sec
+    [junit] Testcase: testMergeLeafPages took 0.021 sec
+    [junit] Testcase: testRedistributeLeafPages took 0.018 sec
+    [junit] Testcase: testDeleteRootPage took 0.011 sec
+    [junit] Testcase: testRedistributeInternalPages took 1.609 sec
+    [junit] Testcase: testDeleteInternalPages took 0.198 sec
+    [junit] Running simpledb.systemtest.BTreeFileInsertTest
+    [junit] Testsuite: simpledb.systemtest.BTreeFileInsertTest
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.363 sec
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.363 sec
+    [junit] 
+    [junit] Testcase: testSplitInternalPage took 0.366 sec
+    [junit] Testcase: addDuplicateTuples took 0.127 sec
+    [junit] Testcase: testSplitRootPage took 0.845 sec
+    [junit] Testcase: testSplitLeafPage took 0.003 sec
+    [junit] Testcase: addTuple took 0.012 sec
+    [junit] Running simpledb.systemtest.BTreeScanTest
+    [junit] Testsuite: simpledb.systemtest.BTreeScanTest
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.287 sec
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.287 sec
+    [junit] 
+    [junit] Testcase: testRewind took 0.07 sec
+    [junit] Testcase: testRewindPredicates took 0.02 sec
+    [junit] Testcase: testSmall took 1.136 sec
+    [junit] Testcase: testReadPage took 0.049 sec
+    [junit] Running simpledb.systemtest.DeleteTest
+    [junit] Testsuite: simpledb.systemtest.DeleteTest
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.113 sec
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.113 sec
+    [junit] 
+    [junit] Testcase: testEquals took 0.059 sec
+    [junit] Testcase: testLessThan took 0.013 sec
+    [junit] Testcase: testLessThanOrEq took 0.011 sec
+    [junit] Testcase: testGreaterThan took 0.008 sec
+    [junit] Testcase: testGreaterThanOrEq took 0.008 sec
+    [junit] Running simpledb.systemtest.EvictionTest
+    [junit] Testsuite: simpledb.systemtest.EvictionTest
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.642 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.642 sec
+    [junit] ------------- Standard Output ---------------
+    [junit] EvictionTest creating large table
+    [junit] EvictionTest scanning large table
+    [junit] EvictionTest scan complete, testing memory usage of scan
+    [junit] ------------- ---------------- ---------------
+    [junit] 
+    [junit] Testcase: testHeapFileScanWithManyPages took 0.633 sec
+    [junit] Running simpledb.systemtest.FilterTest
+    [junit] Testsuite: simpledb.systemtest.FilterTest
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.088 sec
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.088 sec
+    [junit] 
+    [junit] Testcase: testEquals took 0.042 sec
+    [junit] Testcase: testLessThan took 0.011 sec
+    [junit] Testcase: testLessThanOrEq took 0.008 sec
+    [junit] Testcase: testGreaterThan took 0.008 sec
+    [junit] Testcase: testGreaterThanOrEq took 0.007 sec
+    [junit] Running simpledb.systemtest.HashEquiJoinTest
+    [junit] Testsuite: simpledb.systemtest.HashEquiJoinTest
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 sec
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 sec
+    [junit] 
+    [junit] Testcase: testSingleMatch took 0.048 sec
+    [junit] Testcase: testNoMatch took 0.003 sec
+    [junit] Testcase: testMultipleMatch took 0.002 sec
+    [junit] Running simpledb.systemtest.InsertTest
+    [junit] Testsuite: simpledb.systemtest.InsertTest
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec
+    [junit] 
+    [junit] Testcase: testEmptyToEmpty took 0.022 sec
+    [junit] Testcase: testEmptyToOne took 0.002 sec
+    [junit] Testcase: testOneToEmpty took 0.002 sec
+    [junit] Testcase: testOneToOne took 0.002 sec
+    [junit] Running simpledb.systemtest.JoinTest
+    [junit] Testsuite: simpledb.systemtest.JoinTest
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec
+    [junit] 
+    [junit] Testcase: testSingleMatch took 0.042 sec
+    [junit] Testcase: testNoMatch took 0.002 sec
+    [junit] Testcase: testMultipleMatch took 0.003 sec
+    [junit] Running simpledb.systemtest.ScanTest
+    [junit] Testsuite: simpledb.systemtest.ScanTest
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.388 sec
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.388 sec
+    [junit] 
+    [junit] Testcase: testCache took 0.191 sec
+    [junit] Testcase: testRewind took 0.003 sec
+    [junit] Testcase: testSmall took 0.184 sec
+
+BUILD SUCCESSFUL
+Total time: 8 seconds

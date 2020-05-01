@@ -1,0 +1,26 @@
+Buildfile: /home/chen/SimpleDB/acmdb-lab3/build.xml
+
+compile:
+   [depend] Deleted 1 out of date files in 0 seconds
+    [javac] Compiling 1 source file to /home/chen/SimpleDB/acmdb-lab3/bin/src
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 8
+    [javac] 1 warning
+
+testcompile:
+
+runtest:
+    [junit] Running simpledb.HashEquiJoinTest
+    [junit] Testsuite: simpledb.HashEquiJoinTest
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.251 sec
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.251 sec
+    [junit] ------------- Standard Output ---------------
+    [junit] JOIN PRODUCED 300010 ROWS
+    [junit] JOIN PRODUCED 300010 ROWS
+    [junit] ------------- ---------------- ---------------
+    [junit] 
+    [junit] Testcase: getTupleDesc took 0.007 sec
+    [junit] Testcase: eqJoin took 0.001 sec
+    [junit] Testcase: bigJoin took 0.232 sec
+
+BUILD SUCCESSFUL
+Total time: 1 second

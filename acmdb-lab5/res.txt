@@ -1,0 +1,56 @@
+Buildfile: /home/chen/SimpleDB/acmdb-lab5/build.xml
+
+compile:
+
+testcompile:
+
+systemtest:
+    [junit] Running simpledb.systemtest.AbortEvictionTest
+    [junit] Testsuite: simpledb.systemtest.AbortEvictionTest
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.091 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.091 sec
+    [junit] 
+    [junit] Testcase: testDoNotEvictDirtyPages took 0.081 sec
+    [junit] Running simpledb.systemtest.AggregateTest
+    [junit] Testsuite: simpledb.systemtest.AggregateTest
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.101 sec
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.101 sec
+    [junit] 
+    [junit] Testcase: testCount took 0.058 sec
+    [junit] Testcase: testAverage took 0.008 sec
+    [junit] Testcase: testAverageNoGroup took 0.006 sec
+    [junit] Testcase: testSum took 0.006 sec
+    [junit] Testcase: testMin took 0.006 sec
+    [junit] Testcase: testMax took 0.005 sec
+    [junit] Running simpledb.systemtest.BTreeFileDeleteTest
+    [junit] Testsuite: simpledb.systemtest.BTreeFileDeleteTest
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.192 sec
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.192 sec
+    [junit] 
+    [junit] Testcase: testReuseDeletedPages took 0.105 sec
+    [junit] Testcase: testMergeLeafPages took 0.021 sec
+    [junit] Testcase: testRedistributeLeafPages took 0.01 sec
+    [junit] Testcase: testDeleteRootPage took 0.013 sec
+    [junit] Testcase: testRedistributeInternalPages took 1.763 sec
+    [junit] Testcase: testDeleteInternalPages took 0.266 sec
+    [junit] Running simpledb.systemtest.BTreeFileInsertTest
+    [junit] Testsuite: simpledb.systemtest.BTreeFileInsertTest
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.564 sec
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.564 sec
+    [junit] 
+    [junit] Testcase: testSplitRootPage took 1.4 sec
+    [junit] Testcase: testSplitLeafPage took 0.004 sec
+    [junit] Testcase: addDuplicateTuples took 0 sec
+    [junit] Testcase: addTuple took 0.017 sec
+    [junit] Testcase: testSplitInternalPage took 0.13 sec
+    [junit] Running simpledb.systemtest.BTreeScanTest
+    [junit] Testsuite: simpledb.systemtest.BTreeScanTest
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.204 sec
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.204 sec
+    [junit] 
+    [junit] Testcase: testRewind took 0.073 sec
+    [junit] Testcase: testRewindPredicates took 0.021 sec
+    [junit] Testcase: testSmall took 1.039 sec
+    [junit] Testcase: testReadPage took 0.055 sec
+    [junit] Running simpledb.systemtest.BTreeTest
+    [junit] Testsuite: simpledb.systemtest.BTreeTest

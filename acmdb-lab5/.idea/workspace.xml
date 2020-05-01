@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9b0d0caa-55a8-414e-a036-b2caa00ceed4" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1b7YdjVTwNbHB7qvl1zRu7NO1AD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test/simpledb" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test/simpledb" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.AbortEvictionTest and 15 more (1)">
+    <configuration name="AbortEvictionTest and 15 more (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="acmdb-lab3" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <patterns>
+        <pattern testClass="simpledb.systemtest.AbortEvictionTest" />
+        <pattern testClass="simpledb.systemtest.AggregateTest" />
+        <pattern testClass="simpledb.systemtest.BTreeFileDeleteTest" />
+        <pattern testClass="simpledb.systemtest.BTreeFileInsertTest" />
+        <pattern testClass="simpledb.systemtest.BTreeScanTest" />
+        <pattern testClass="simpledb.systemtest.BTreeTest" />
+        <pattern testClass="simpledb.systemtest.DeleteTest" />
+        <pattern testClass="simpledb.systemtest.EvictionTest" />
+        <pattern testClass="simpledb.systemtest.FilterBase" />
+        <pattern testClass="simpledb.systemtest.FilterTest" />
+        <pattern testClass="simpledb.systemtest.HashEquiJoinTest" />
+        <pattern testClass="simpledb.systemtest.InsertTest" />
+        <pattern testClass="simpledb.systemtest.JoinTest" />
+        <pattern testClass="simpledb.systemtest.QueryTest" />
+        <pattern testClass="simpledb.systemtest.ScanTest" />
+        <pattern testClass="simpledb.systemtest.TransactionTest" />
+      </patterns>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AbortEvictionTest and 15 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="acmdb-lab3" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <patterns>
+        <pattern testClass="simpledb.systemtest.AbortEvictionTest" />
+        <pattern testClass="simpledb.systemtest.AggregateTest" />
+        <pattern testClass="simpledb.systemtest.BTreeFileDeleteTest" />
+        <pattern testClass="simpledb.systemtest.BTreeFileInsertTest" />
+        <pattern testClass="simpledb.systemtest.BTreeScanTest" />
+        <pattern testClass="simpledb.systemtest.BTreeTest" />
+        <pattern testClass="simpledb.systemtest.DeleteTest" />
+        <pattern testClass="simpledb.systemtest.EvictionTest" />
+        <pattern testClass="simpledb.systemtest.FilterBase" />
+        <pattern testClass="simpledb.systemtest.FilterTest" />
+        <pattern testClass="simpledb.systemtest.HashEquiJoinTest" />
+        <pattern testClass="simpledb.systemtest.InsertTest" />
+        <pattern testClass="simpledb.systemtest.JoinTest" />
+        <pattern testClass="simpledb.systemtest.QueryTest" />
+        <pattern testClass="simpledb.systemtest.ScanTest" />
+        <pattern testClass="simpledb.systemtest.TransactionTest" />
+      </patterns>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BTreeTest.testBigFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="acmdb-lab3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="simpledb.systemtest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="simpledb.systemtest" />
+      <option name="MAIN_CLASS_NAME" value="simpledb.systemtest.BTreeTest" />
+      <option name="METHOD_NAME" value="testBigFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InsertTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="acmdb-lab3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="simpledb.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="simpledb" />
+      <option name="MAIN_CLASS_NAME" value="simpledb.InsertTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AbortEvictionTest and 15 more (1)" />
+        <item itemvalue="JUnit.BTreeTest.testBigFile" />
+        <item itemvalue="JUnit.AbortEvictionTest and 15 more" />
+        <item itemvalue="JUnit.InsertTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9b0d0caa-55a8-414e-a036-b2caa00ceed4" name="Default Changelist" comment="" />
+      <created>1587984687061</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587984687061</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="776" y="260" width="424" height="585" key="FileChooserDialogImpl" timestamp="1588261737685">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="776" y="260" width="424" height="585" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1588261737685" />
+    <state width="1807" height="278" key="GridCell.Tab.0.bottom" timestamp="1588270806602">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="278" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1588270806602" />
+    <state width="1807" height="278" key="GridCell.Tab.0.center" timestamp="1588270806601">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="278" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1588270806601" />
+    <state width="1807" height="278" key="GridCell.Tab.0.left" timestamp="1588270806601">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="278" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1588270806601" />
+    <state width="1807" height="278" key="GridCell.Tab.0.right" timestamp="1588270806602">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="278" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1588270806602" />
+    <state width="1807" height="344" key="GridCell.Tab.1.bottom" timestamp="1588270806596">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="344" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1588270806596" />
+    <state width="1807" height="344" key="GridCell.Tab.1.center" timestamp="1588270806596">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="344" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1588270806596" />
+    <state width="1807" height="344" key="GridCell.Tab.1.left" timestamp="1588270806595">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="344" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1588270806595" />
+    <state width="1807" height="344" key="GridCell.Tab.1.right" timestamp="1588270806596">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="344" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1588270806596" />
+    <state x="579" y="251" width="819" height="602" key="NewModule_or_Project.wizard" timestamp="1588261742539">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="579" y="251" width="819" height="602" key="NewModule_or_Project.wizard/67.27.1853.1053@67.27.1853.1053" timestamp="1588261742539" />
+    <state x="476" y="130" width="1024" height="845" key="SettingsEditor" timestamp="1588263210071">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="476" y="130" width="1024" height="845" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1588263210071" />
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1588263085657">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1588263085657" />
+    <state x="302" y="153" width="1372" height="798" key="new project wizard" timestamp="1588240567323">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="302" y="153" width="1372" height="798" key="new project wizard/67.27.1853.1053@67.27.1853.1053" timestamp="1588240567323" />
+    <state x="657" y="253" key="run.anything.popup" timestamp="1587985242978">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="657" y="253" key="run.anything.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1587985242978" />
+    <state x="656" y="257" key="search.everywhere.popup" timestamp="1588261366432">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="656" y="257" key="search.everywhere.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1588261366432" />
+  </component>
+</project>
